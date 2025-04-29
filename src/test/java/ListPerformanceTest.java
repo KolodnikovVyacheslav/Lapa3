@@ -7,6 +7,9 @@ public class ListPerformanceTest {
 
     private final ListPerformance listPerformance = new ListPerformance(1000);
 
+    /**
+     * Тестирует производительность метода add для ArrayList.
+     */
     @Test
     public void testArrayListAddPerformance() {
         long startTime = System.nanoTime();
@@ -15,6 +18,9 @@ public class ListPerformanceTest {
         assertTrue((endTime - startTime) < 100000000, "Performance test failed for ArrayList add");
     }
 
+    /**
+     * Тестирует производительность метода get для ArrayList.
+     */
     @Test
     public void testArrayListGetPerformance() {
         long startTime = System.nanoTime();
@@ -23,6 +29,9 @@ public class ListPerformanceTest {
         assertTrue((endTime - startTime) < 10000000, "Performance test failed for ArrayList get");
     }
 
+    /**
+     * Тестирует производительность метода remove для ArrayList.
+     */
     @Test
     public void testArrayListRemovePerformance() {
         long startTime = System.nanoTime();

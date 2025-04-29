@@ -8,10 +8,18 @@ public class ListPerformance {
 
     private final int operationsCount;
 
+    /**
+     * Конструктор для создания экземпляра ListPerformance с количеством операций.
+     *
+     * @param operationsCount количество операций для тестирования
+     */
     public ListPerformance(int operationsCount) {
         this.operationsCount = operationsCount;
     }
 
+    /**
+     * Тестирует производительность метода add для ArrayList и LinkedList.
+     */
     public void testAddPerformance() {
         System.out.println("Тестируем добавление элементов...");
 
@@ -32,6 +40,9 @@ public class ListPerformance {
         System.out.println("LinkedList - add(" + operationsCount + "): " + (endTime - startTime) + " ns");
     }
 
+    /**
+     * Тестирует производительность метода get для ArrayList и LinkedList.
+     */
     public void testGetPerformance() {
         System.out.println("Тестируем получение элементов...");
 
@@ -58,6 +69,9 @@ public class ListPerformance {
         System.out.println("LinkedList - get(" + operationsCount + "): " + (endTime - startTime) + " ns");
     }
 
+    /**
+     * Тестирует производительность метода remove для ArrayList и LinkedList.
+     */
     public void testRemovePerformance() {
         System.out.println("Тестируем удаление элементов...");
 
